@@ -1,0 +1,11 @@
+<html>
+    <h1><p>Введите количество имеющихсся у Вас долларов.</p></h1>
+    <form  action='getsome'  method='POST'>
+      {% csrf_token %}
+      {{ form }}
+      <p><input type="submit"></p>
+      <p>Получим в рублях: {{amount}}</p>
+      <p>По текущему курсу: {{rubrate}} за один доллар</p>
+    </form>
+    <h2>Актуальный курс предоставляется openexchangerates.org</p>
+</html>

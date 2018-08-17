@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+ratecurrvenv
+db.sqlite3
+/static
+.DS_Store
