@@ -3,7 +3,7 @@
     <form  action='getsome'  method='POST'>
       {% csrf_token %}
       {{ form }}
-      <p><input type="submit"></p>
+      <p><input type="submit" value="В рубли"></p>
       <p>Получим в рублях: {{amount}}</p>
       <p>По текущему курсу: {{rubrate}} за один доллар</p>
     </form>
